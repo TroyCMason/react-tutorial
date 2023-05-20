@@ -9,7 +9,7 @@ interface Props {
 
 function ListGroup({ items, heading, onSelectItem }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(-1);
-
+heading="";
   return (
     <>
       <h1>{heading}</h1>
