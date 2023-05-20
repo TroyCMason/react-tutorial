@@ -4,12 +4,14 @@ interface Props {
   items: string[];
   heading: string;
   // (item: strinf) => void
-  onSelectItem: (item: string) => void
+  onSelectItem: (item: string) => void;
 }
 
 function ListGroup({ items, heading, onSelectItem }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(-1);
-heading="";
+
+  heading = "";
+  
   return (
     <>
       <h1>{heading}</h1>
